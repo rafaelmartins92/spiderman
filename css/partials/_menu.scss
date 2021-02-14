@@ -26,9 +26,13 @@ header {
   li {
     margin-left: 24px;
   }
+
+  @include responsive() {
+    display: none;
+  }
 }
 
-.logo{
+.logo {
   max-width: 88px;
 }
 
@@ -43,7 +47,7 @@ header {
   color: $gray-3;
 
   padding: 8px 16px;
-  transition: .7s ease;
+  transition: 0.7s ease;
 
   position: relative;
 
@@ -56,12 +60,12 @@ header {
 
     width: 2px;
     height: 0px;
-    transition: .7s ease;
+    transition: 0.7s ease;
 
     background: linear-gradient(180deg, rgba(233, 29, 34, 0) 0%, #e91d22 100%);
   }
 
-  &:hover{
+  &:hover {
     color: $white-light;
 
     &::after {
@@ -70,24 +74,43 @@ header {
   }
 }
 
-.nav-social{
+.nav-social {
   display: flex;
 
-  svg{
+  svg {
     cursor: pointer;
 
     margin-left: 16px;
     width: 24px;
 
-    path, circle{
-      transition: .7s ease;
+    path,
+    circle {
+      transition: 0.7s ease;
     }
 
-    &:hover{
-      path, circle{
+    &:hover {
+      path,
+      circle {
         fill: $red-light;
         transform: translate3d(0, -3px, 0);
       }
     }
+  }
+
+  @include responsive() {
+    display: none;
+  }
+}
+
+.bx {
+  display: none;
+
+  @include responsive() {
+    display: block;
+    width: 48px;
+    height: 48px;
+
+    background-color: white;
+    border-radius: 8px;
   }
 }

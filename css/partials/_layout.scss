@@ -1,4 +1,4 @@
-.container{
+.container {
   max-width: 1440px;
   margin: 0 auto;
 
@@ -6,12 +6,20 @@
 
   overflow: hidden;
 
+  height: 85%;
+
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  @include responsive() {
+    flex-direction: column;
+    height: auto;
+    overflow: none;
+  }
 }
 
-.container-item-1{
+.container-item-1 {
   max-width: 576px;
 
   display: flex;
@@ -19,15 +27,29 @@
   align-items: flex-start;
 }
 
-.container-item-2{
+.flex {
+  display: flex;
 }
 
-.spiderman{
+.w-auto {
+  width: auto;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.spiderman {
   width: 150%;
   transform: translate3d(-170px, 0, 0);
+
+  @include responsive() {
+    width: 100%;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
-.btn{
+.btn {
   display: inline-block;
 
   padding: 12px 32px;
@@ -36,12 +58,12 @@
   transform: skew(-10deg);
 
   text-transform: uppercase;
-  background: linear-gradient(225deg, #EA1D22 0%, #B31317 100%);
+  background: linear-gradient(225deg, #ea1d22 0%, #b31317 100%);
 
   position: relative;
 
-  &::after{
-    content: '';
+  &::after {
+    content: "";
     display: block;
     position: absolute;
     top: -2px;
@@ -57,8 +79,8 @@
     border-left: 3px solid #fff;
   }
 
-  &::before{
-    content: '';
+  &::before {
+    content: "";
     display: block;
     position: absolute;
     bottom: -2px;
@@ -67,7 +89,7 @@
     width: 30%;
     height: 70%;
     opacity: 0;
-    transition: .7s ease;
+    transition: 0.7s ease;
 
     border-radius: 3px;
 
@@ -75,19 +97,19 @@
     border-right: 3px solid #fff;
   }
 
-  &:hover{
+  &:hover {
     transform: skew(-10deg) scale(1.05);
-    transition: .7s ease;
-    &::after{
+    transition: 0.7s ease;
+    &::after {
       opacity: 1;
     }
-    &::before{
+    &::before {
       opacity: 1;
     }
   }
 }
 
-.btn-secondary{
+.btn-secondary {
   display: inline-block;
 
   padding: 10px 32px;
@@ -101,8 +123,8 @@
 
   position: relative;
 
-  &::after{
-    content: '';
+  &::after {
+    content: "";
     display: block;
     position: absolute;
     top: -1px;
@@ -114,11 +136,11 @@
     height: 103%;
     transition: 0.7s ease;
 
-    background: linear-gradient(225deg, #EA1D22 0%, #B31317 100%);
+    background: linear-gradient(225deg, #ea1d22 0%, #b31317 100%);
   }
 
-  &:hover{
-    &::after{
+  &:hover {
+    &::after {
       width: 101%;
     }
   }
