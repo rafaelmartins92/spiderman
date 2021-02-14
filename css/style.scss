@@ -2,9 +2,35 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Mukta', sans-serif;
 }
+
+@import 'partials/colors';
 
 body{
   width: 100%;
-  background:#1a1a1a;
+  height: 100vh;
+
+  background: $blue-dark;
 }
+
+img, svg{
+  display: block;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: $white;
+}
+
+p{
+  font-size: 16px;
+  color: $gray-3;
+  letter-spacing: 1px;
+  line-height: 140%;
+}
+
+@import 'partials/layout';
+@import 'partials/menu';
+@import 'partials/animations';

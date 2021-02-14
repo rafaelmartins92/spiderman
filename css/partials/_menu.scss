@@ -6,6 +6,7 @@ header {
 .navbar {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 16px;
 
   display: flex;
   justify-content: space-between;
@@ -25,6 +26,10 @@ header {
   li {
     margin-left: 24px;
   }
+}
+
+.logo{
+  max-width: 88px;
 }
 
 .nav-link {
