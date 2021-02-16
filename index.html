@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spider-man: Miles Morales</title>
     <script src="js/svg-inject.min.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="img/icon.png" rel="icon" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap"
       rel="stylesheet"
@@ -34,34 +35,65 @@
           <img src="svg/icon-youtube.svg" onload="SVGInject(this)" />
           <img src="svg/icon-twitter.svg" onload="SVGInject(this)" />
         </div>
+        <div class="bx mr-2"></div>
       </nav>
     </header>
+
+    <!-- BG VIDEO -->
+
+    <section class="bg-video">
+      <video class="video" autoplay muted loop>
+        <source src="video/spiderman2.mp4" type="video/mp4" />
+      </video>
+    </section>
 
     <!-- CONTAINER -->
 
     <section class="container">
       <div class="container-item-1">
-        <p>
+        <div>
           <img src="img/spiderman-text.png" onload="SVGInject(this)" />
-        </p>
-        <p>
+        </div>
+        <p class="my-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis velit
           magna vitae mauris orci fames posuere nibh. Sit tellus amet facilisi
           sit odio pulvinar scelerisque quam et. Ultrices facilisis nunc massa
           diam, quis mi imperdiet.
         </p>
-        <p>
+        <div>
           <a href="" class="btn">Pre-order now</a>
-          <a href="" class="btn-secondary">Watch the teaser</a>
-        </p>
-        <p>
-          <img src="svg/ps.svg" onload="SVGInject(this)" />
-          <img src="svg/marvel.svg" onload="SVGInject(this)" />
-        </p>
+          <a href="" class="btn-secondary ml-2">Watch the teaser</a>
+        </div>
+        <div class="flex align-items-center mt-2">
+          <img src="svg/ps.svg" class="w-auto" onload="SVGInject(this)" />
+          <img
+            src="svg/marvel.svg"
+            class="w-auto ml-2"
+            onload="SVGInject(this)"
+          />
+        </div>
       </div>
       <div class="container-item-2">
-        <img src="img/spider-man.png" class="spiderman" onload="SVGInject(this)" />
+        <div class="js-tilt">
+          <img
+            src="img/spider-man.png"
+            class="spiderman"
+            onload="SVGInject(this)"
+          />
+        </div>
       </div>
     </section>
+
+    <!-- SCRIPTS -->
+
+    <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script>
+      $(".js-tilt").tilt({
+        perspective: 2000,
+        scale: 1.05,
+      });
+    </script>
   </body>
 </html>
