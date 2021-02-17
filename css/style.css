@@ -357,18 +357,70 @@ header {
   }
 }
 
-.bx {
+.hamburguer-label {
   display: none;
 }
 
 @media screen and (max-width: 960px) {
-  .bx {
+  .hamburguer-label {
+    display: block;
+  }
+}
+
+.hamburguer {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .hamburguer {
     display: block;
     width: 48px;
     height: 48px;
-    background-color: white;
-    border-radius: 8px;
+    border-radius: 10%;
+    position: relative;
   }
+  .hamburguer::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 70%;
+    height: 10%;
+    border-radius: 20px;
+    background-color: #EDF1F7;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+  }
+  .hamburguer::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    width: 40%;
+    height: 10%;
+    border-radius: 20px;
+    background-color: #EDF1F7;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+  }
+}
+
+#hamburguer:checked ~ label .hamburguer::after {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  top: 45%;
+  left: 15%;
+  width: 70%;
+  height: 10%;
+}
+
+#hamburguer:checked ~ label .hamburguer::before {
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+  top: 45%;
+  left: 15%;
+  width: 70%;
+  height: 10%;
 }
 
 .logo-spiderman {
