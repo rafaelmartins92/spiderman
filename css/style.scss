@@ -18,6 +18,8 @@ body {
   height: 100vh;
 
   background: $blue-dark;
+  
+  overflow-y: hidden;
 }
 
 img, svg {
