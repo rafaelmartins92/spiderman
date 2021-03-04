@@ -44,10 +44,10 @@
 
 This project was developed with the following technologies:
 
--  [HTML](https://reactjs.org/docs/getting-started.html)
--  [SASS](https://reactnavigation.org/)
--  [JavaScript](https://kmagiera.github.io/react-native-gesture-handler/)
--  [GSAP](https://www.mongodb.com/)
+-  [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+-  [SASS](https://sass-lang.com/)
+-  [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+-  [GSAP](https://greensock.com/gsap/)
 -  [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
 
 ## :eyes: Check it Out
