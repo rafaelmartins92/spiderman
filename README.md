@@ -19,8 +19,6 @@
 
 <h4 align="center">
   <p>Spider-man: Miles Morales</p>
-  
-  <p>This application was developed during the FrontPush from Nasser Yousef.</p>
 
   <p>
   In this project we built an awesome landing page from the beginning. 
@@ -38,7 +36,7 @@
 </p>
 
 <p align="center">
-  <img alt="Scene" src="img/portfolio-scene---spiderman@2x.png">
+  <img alt="Scene" src="img/portfolio-scene-spiderman@2x.png">
 </p>
 
 ## :rocket: Technologies
