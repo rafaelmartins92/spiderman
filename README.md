@@ -21,12 +21,9 @@
   <p>Spider-man: Miles Morales</p>
 
   <p>
-  In this project we built an awesome landing page from the beginning. 
-
-  We started by creating the Style Guide. After that we designed the UI Concept. And finally we developed the page using HTML, SASS and Javascript
+  This is a study project to improve my skills in HTML, SASS, JavaScript and GSAP.
   </p>
 </h4>
-
 
 <p align="center">
   <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -43,17 +40,17 @@
 
 This project was developed with the following technologies:
 
--  [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
--  [SASS](https://sass-lang.com/)
--  [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
--  [GSAP](https://greensock.com/gsap/)
--  [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
+- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [SASS](https://sass-lang.com/)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [GSAP](https://greensock.com/gsap/)
+- [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
 
 ## :eyes: Check it Out
 
 You can try it here:
 
--  [Spider-man: Miles Morales][demo]
+- [Spider-man: Miles Morales][demo]
 
 ## :information_source: How to use
 
@@ -72,6 +69,7 @@ $ cd spiderman
 ```
 
 ## :memo: License
+
 This project is under the MIT license. See the [LICENSE](https://github.com/rafaelmartins92/spiderman/blob/master/LICENSE) for more information.
 
 ---
